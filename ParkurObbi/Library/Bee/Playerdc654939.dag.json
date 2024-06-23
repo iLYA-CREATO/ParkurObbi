@@ -433,13 +433,7 @@
         425,
         426,
         427,
-        428,
-        429,
-        430,
-        431,
-        432,
-        433,
-        434
+        428
       ],
       "OverwriteOutputs": false,
       "DebugActionIndex": 0
@@ -21136,116 +21130,34 @@
       "DebugActionIndex": 415
     },
     {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
-      "DisplayName": "7z build.framework.js",
-      "Action": "cd \"E:/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/7z.exe\" a -tgzip \"E:/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked\" \"build.framework.js\"",
+      "Annotation": "CopyFiles E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.framework.js",
+      "DisplayName": "Copying ParkurRoblox.framework.js",
+      "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/7z.exe"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js"
       ],
       "Outputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked"
+        "E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.framework.js"
       ],
       "ToBuildDependencies": [
         415
       ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
       "DebugActionIndex": 416
     },
     {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/ParkurRoblox.framework.js.gz_2c8i.info",
-      "DisplayName": "Writing ParkurRoblox.framework.js.gz_2c8i.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 177841,
-      "PayloadLength": 492,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/ParkurRoblox.framework.js.gz_2c8i.info"
-      ],
-      "DebugActionIndex": 417
-    },
-    {
-      "Annotation": "GzipMarker E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.framework.js.gz",
-      "DisplayName": "GzipMarker ParkurRoblox.framework.js",
-      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\ParkurRoblox.framework.js.gz_2c8i.info\"",
+      "Annotation": "CopyFiles E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.wasm",
+      "DisplayName": "Copying ParkurRoblox.wasm",
+      "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.framework.js.unmarked",
-        "Library/Bee/artifacts/csharpactions/ParkurRoblox.framework.js.gz_2c8i.info",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
+        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm"
       ],
       "Outputs": [
-        "E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.framework.js.gz"
-      ],
-      "ToBuildDependencies": [
-        416,
-        417
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 418
-    },
-    {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
-      "DisplayName": "7z build.wasm",
-      "Action": "cd \"E:/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/7z.exe\" a -tgzip \"E:/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked\" \"build.wasm\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/7z.exe"
-      ],
-      "Outputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked"
+        "E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.wasm"
       ],
       "ToBuildDependencies": [
         413
       ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 419
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/ParkurRoblox.wasm.gz_bwv2.info",
-      "DisplayName": "Writing ParkurRoblox.wasm.gz_bwv2.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 178431,
-      "PayloadLength": 476,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/ParkurRoblox.wasm.gz_bwv2.info"
-      ],
-      "DebugActionIndex": 420
-    },
-    {
-      "Annotation": "GzipMarker E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.wasm.gz",
-      "DisplayName": "GzipMarker ParkurRoblox.wasm",
-      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\ParkurRoblox.wasm.gz_bwv2.info\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/build/debug_WebGL_wasm/build.wasm.unmarked",
-        "Library/Bee/artifacts/csharpactions/ParkurRoblox.wasm.gz_bwv2.info",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
-      ],
-      "Outputs": [
-        "E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.wasm.gz"
-      ],
-      "ToBuildDependencies": [
-        419,
-        420
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 421
+      "DebugActionIndex": 417
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/UnityLinkerToEditorData.json",
@@ -21260,7 +21172,7 @@
       "ToBuildDependencies": [
         4
       ],
-      "DebugActionIndex": 422
+      "DebugActionIndex": 418
     },
     {
       "Annotation": "CopyFiles Temp/EditorBuildOutput/MethodMap.tsv",
@@ -21275,20 +21187,20 @@
       "ToBuildDependencies": [
         5
       ],
-      "DebugActionIndex": 423
+      "DebugActionIndex": 419
     },
     {
       "Annotation": "WriteText Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info",
       "DisplayName": "Writing webgl.data_qnm2.info",
       "ActionType": "WriteFile",
-      "PayloadOffset": 178995,
+      "PayloadOffset": 177823,
       "PayloadLength": 1882,
       "PayloadDebugContentSnippet": "{\"System.Collections.Generic.D",
       "Inputs": [],
       "Outputs": [
         "Library/Bee/artifacts/csharpactions/webgl.data_qnm2.info"
       ],
-      "DebugActionIndex": 424
+      "DebugActionIndex": 420
     },
     {
       "Annotation": "Assemble WebGL Data Library/Bee/artifacts/WebGL/webgl.data",
@@ -21314,73 +21226,32 @@
       "ToBuildDependencies": [
         2,
         5,
-        424
+        420
       ],
       "OverwriteOutputs": false,
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 425
+      "DebugActionIndex": 421
     },
     {
-      "Annotation": "7z Library/Bee/artifacts/WebGL/webgl.data.unmarked",
-      "DisplayName": "7z webgl.data",
-      "Action": "cd \"E:/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Library/Bee/artifacts/WebGL\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/7z.exe\" a -tgzip \"E:/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Library/Bee/artifacts/WebGL/webgl.data.unmarked\" \"webgl.data\"",
+      "Annotation": "CopyFiles E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.data",
+      "DisplayName": "Copying ParkurRoblox.data",
+      "ActionType": "CopyFiles",
       "Inputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/7z.exe"
+        "Library/Bee/artifacts/WebGL/webgl.data"
       ],
       "Outputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data.unmarked"
+        "E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.data"
       ],
       "ToBuildDependencies": [
-        425
+        421
       ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 426
-    },
-    {
-      "Annotation": "WriteText Library/Bee/artifacts/csharpactions/ParkurRoblox.data.gz_9iy7.info",
-      "DisplayName": "Writing ParkurRoblox.data.gz_9iy7.info",
-      "ActionType": "WriteFile",
-      "PayloadOffset": 180975,
-      "PayloadLength": 453,
-      "PayloadDebugContentSnippet": "{\"System.Object\":null,\"Bee.Tun",
-      "Inputs": [],
-      "Outputs": [
-        "Library/Bee/artifacts/csharpactions/ParkurRoblox.data.gz_9iy7.info"
-      ],
-      "DebugActionIndex": 427
-    },
-    {
-      "Annotation": "GzipMarker E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.data.gz",
-      "DisplayName": "GzipMarker ParkurRoblox.data",
-      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\Tools\\netcorerun\\netcorerun.exe\" \"C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.19f1\\Editor\\Data\\PlaybackEngines\\WebGLSupport\\WebGLPlayerBuildProgram.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/Bee;C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/Tools/BuildPipeline\" invoke_static_method \"Library\\Bee\\artifacts\\csharpactions\\ParkurRoblox.data.gz_9iy7.info\"",
-      "Inputs": [
-        "Library/Bee/artifacts/WebGL/webgl.data.unmarked",
-        "Library/Bee/artifacts/csharpactions/ParkurRoblox.data.gz_9iy7.info",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/modules.asset",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.Data.dll",
-        "C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/WebGLPlayerBuildProgram.exe"
-      ],
-      "Outputs": [
-        "E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.data.gz"
-      ],
-      "ToBuildDependencies": [
-        426,
-        427
-      ],
-      "OverwriteOutputs": false,
-      "AllowUnexpectedOutput": true,
-      "Env": [],
-      "DebugActionIndex": 428
+      "DebugActionIndex": 422
     },
     {
       "Annotation": "PreprocessJS E:/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.loader.js",
       "DisplayName": "PreprocessJS ParkurRoblox.loader",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='E\\x3a/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.loader.js'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='TGS'\" \"PRODUCT_NAME='ParkurObbi'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='ParkurRoblox.data.gz'\" \"FRAMEWORK_FILENAME='ParkurRoblox.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='ParkurRoblox.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.19f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='ParkurRoblox.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='UnityLoader/UnityLoader.js'\"  \"locals.outputPath='E\\x3a/fails/iT/Project/ParkurRoblox/Build/ParkurRoblox.loader.js'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=true\"  \"COMPANY_NAME='TGS'\" \"PRODUCT_NAME='ParkurObbi'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='ParkurRoblox.data'\" \"FRAMEWORK_FILENAME='ParkurRoblox.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='ParkurRoblox.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.19f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='ParkurRoblox.loader.js'\"",
       "Inputs": [
         "UnityLoader/UnityLoader.js"
       ],
@@ -21389,7 +21260,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 429
+      "DebugActionIndex": 423
     },
     {
       "Annotation": "CopyFiles E:/fails/iT/Project/ParkurRoblox/background.jpg",
@@ -21401,12 +21272,12 @@
       "Outputs": [
         "E:/fails/iT/Project/ParkurRoblox/background.jpg"
       ],
-      "DebugActionIndex": 430
+      "DebugActionIndex": 424
     },
     {
       "Annotation": "PreprocessJS E:/fails/iT/Project/ParkurRoblox/index.html",
       "DisplayName": "PreprocessJS index",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='E\\x3a/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Assets/WebGLTemplates/PluginYG/index.html'\"  \"locals.outputPath='E\\x3a/fails/iT/Project/ParkurRoblox/index.html'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='TGS'\" \"PRODUCT_NAME='ParkurObbi'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='ParkurRoblox.data.gz'\" \"FRAMEWORK_FILENAME='ParkurRoblox.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='ParkurRoblox.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.19f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='ParkurRoblox.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='E\\x3a/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Assets/WebGLTemplates/PluginYG/index.html'\"  \"locals.outputPath='E\\x3a/fails/iT/Project/ParkurRoblox/index.html'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='TGS'\" \"PRODUCT_NAME='ParkurObbi'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='ParkurRoblox.data'\" \"FRAMEWORK_FILENAME='ParkurRoblox.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='ParkurRoblox.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.19f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='ParkurRoblox.loader.js'\"",
       "Inputs": [
         "E:/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Assets/WebGLTemplates/PluginYG/index.html"
       ],
@@ -21415,7 +21286,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 431
+      "DebugActionIndex": 425
     },
     {
       "Annotation": "CopyFiles E:/fails/iT/Project/ParkurRoblox/logo.png",
@@ -21427,12 +21298,12 @@
       "Outputs": [
         "E:/fails/iT/Project/ParkurRoblox/logo.png"
       ],
-      "DebugActionIndex": 432
+      "DebugActionIndex": 426
     },
     {
       "Annotation": "PreprocessJS E:/fails/iT/Project/ParkurRoblox/style.css",
       "DisplayName": "PreprocessJS style",
-      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='E\\x3a/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Assets/WebGLTemplates/PluginYG/style.css'\"  \"locals.outputPath='E\\x3a/fails/iT/Project/ParkurRoblox/style.css'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='TGS'\" \"PRODUCT_NAME='ParkurObbi'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='ParkurRoblox.data.gz'\" \"FRAMEWORK_FILENAME='ParkurRoblox.framework.js.gz'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='ParkurRoblox.wasm.gz'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.19f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='ParkurRoblox.loader.js'\"",
+      "Action": "cd /d \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools\" && \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Emscripten/node/node.exe\" \"C:/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/Preprocess.js\"  \"locals.cwd='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools'\"  \"locals.inputPath='E\\x3a/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Assets/WebGLTemplates/PluginYG/style.css'\"  \"locals.outputPath='E\\x3a/fails/iT/Project/ParkurRoblox/style.css'\"  \"locals.webglIncludes='C\\x3a/Program Files/Unity/Hub/Editor/2022.3.19f1/Editor/Data/PlaybackEngines/WebGLSupport/BuildTools/WebGLTemplates/WebGLIncludes'\"  \"locals.minifyOutput=false\"  \"COMPANY_NAME='TGS'\" \"PRODUCT_NAME='ParkurObbi'\" \"PRODUCT_VERSION='0.1'\" \"WIDTH=960\" \"HEIGHT=600\" \"SPLASH_SCREEN_STYLE='Dark'\" \"BACKGROUND_COLOR='\\x23231F20'\" \"DATA_FILENAME='ParkurRoblox.data'\" \"FRAMEWORK_FILENAME='ParkurRoblox.framework.js'\" \"WORKER_FILENAME=''\" \"CODE_FILENAME='ParkurRoblox.wasm'\" \"MEMORY_FILENAME=''\" \"SYMBOLS_FILENAME=''\" \"BACKGROUND_FILENAME=''\" \"USE_WASM=true\" \"USE_THREADS=false\" \"USE_WEBGL_1_0=false\" \"USE_WEBGL_2_0=true\" \"WEBGL_POWER_PREFERENCE=2\" \"USE_DATA_CACHING=true\" \"DECOMPRESSION_FALLBACK=''\" \"DEVELOPMENT_PLAYER=false\" \"UNITY_VERSION='2022.3.19f1'\" \"SHOW_DIAGNOSTICS=false\" \"CLOSE_ON_QUIT=false\" \"LOADER_FILENAME='ParkurRoblox.loader.js'\"",
       "Inputs": [
         "E:/fails/iT/Isxodnik/Git/ParkurObbi/ParkurObbi/Assets/WebGLTemplates/PluginYG/style.css"
       ],
@@ -21441,7 +21312,7 @@
       ],
       "AllowUnexpectedOutput": true,
       "Env": [],
-      "DebugActionIndex": 433
+      "DebugActionIndex": 427
     },
     {
       "Annotation": "Player",
@@ -21451,19 +21322,19 @@
       "ToBuildDependencies": [
         4,
         409,
+        416,
+        417,
         418,
-        421,
+        419,
         422,
         423,
-        428,
-        429,
-        430,
-        431,
-        432,
-        433
+        424,
+        425,
+        426,
+        427
       ],
       "OverwriteOutputs": false,
-      "DebugActionIndex": 434
+      "DebugActionIndex": 428
     }
   ],
   "FileSignatures": [
@@ -21831,7 +21702,7 @@
   ],
         "NamedNodes": {
           "all_tundra_nodes": 0,
-          "Player": 434
+          "Player": 428
         }
 ,  "DefaultNodes": [
     0

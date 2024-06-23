@@ -66,10 +66,15 @@ extern void Item__ctor_m741D59B05082743C60D2F1149112B571E89CAFAF (void);
 extern void Animationmachine_Update_m9D3510682ED88B7F1B2C3C33B0C2FE137EBA08F0 (void);
 extern void Animationmachine_ResetAnim_m26442A58EF6BF34254D65E6312E9D39778C724AC (void);
 extern void Animationmachine__ctor_m16D4E450B99C033E688F6451CE66279C143633B5 (void);
+extern void CheckPoints_Start_m9B370335FA97054A371772F11B12112D0CBCE3E6 (void);
+extern void CheckPoints_OnTriggerEnter_m16519ED28AC5B76A45E61A9C06B6C1985B53939F (void);
+extern void CheckPoints__ctor_m2738124551E9071D95C71E338C9A75BC118B37F6 (void);
 extern void AirPlayer_FixedUpdate_m8F50F77E81BB57920DD5D69EE8626DAB45F454D8 (void);
 extern void AirPlayer_Move_mEBA0A07453D7323BAC6B5590EDE91F5F6F079DEA (void);
 extern void AirPlayer_Fly_m35C6F27897B92B65CAFA9F17E4CA4510C378ACFD (void);
 extern void AirPlayer__ctor_m72C8606524E5852F96E2C878234B57E971526D7C (void);
+extern void MovePlayer_add_UpdateWalletUIPrizeJump_m2794F78878CC40EB2BBB8F403E8E9C33095711D5 (void);
+extern void MovePlayer_remove_UpdateWalletUIPrizeJump_mBF7166CCE41CDABFF6659DFED75102C48C1100B9 (void);
 extern void MovePlayer_Update_mB2024089C129F95C3A8C7B645E691BD181AB9893 (void);
 extern void MovePlayer_FixedUpdate_mCFB64F70ABD7378D082F60DDE3FF8B35AB8F1872 (void);
 extern void MovePlayer_MovePC_m3B93C868B9A9B2C817147330471C8B8EA8D21C22 (void);
@@ -91,6 +96,8 @@ extern void TypeControllerPlayer_ChangeController_mF2E0FF35D60F019A572FD849D057C
 extern void TypeControllerPlayer__ctor_m389FDCD7438CBA7164CBFD81C0C0702151218FB5 (void);
 extern void PlaySound__PlaySound_m915CC8600D4210974AA3DBC68C9C1D99435B228C (void);
 extern void PlaySound__ctor_m0624CBAA48671A848B10D462109CF843BCA98C2B (void);
+extern void RespawnPlayer_OnTriggerEnter_mEDF48201636416D8FA53496748269BED5F8F5296 (void);
+extern void RespawnPlayer__ctor_m850744CC29E7FB1AEBF322230E9A7FA14467CB6F (void);
 extern void AudioController_Start_mB15F7361E4B2B08E6279C71D1E839F3FE0E9DE39 (void);
 extern void AudioController_MusicValue_m569A46A6C124925E1A949670CEEB4A4FDA39B0D1 (void);
 extern void AudioController_SoundValue_m19C6ED4A499E613DA9AA0737F8D27CB77A10A79C (void);
@@ -869,7 +876,7 @@ extern void U3CWarpTextU3Ed__8_System_Collections_Generic_IEnumeratorU3CSystem_O
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_Reset_m07746C332D2D8CE5DEA59873C26F2FAD4B369B42 (void);
 extern void U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19 (void);
 extern void U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876 (void);
-static Il2CppMethodPointer s_methodPointers[857] = 
+static Il2CppMethodPointer s_methodPointers[864] = 
 {
 	JoystickPlayerExample_FixedUpdate_m9AEDBA111F95D67A006A5D3821956048224541B7,
 	JoystickPlayerExample__ctor_m702422E0AE29402330CF41FDDBEE76F0506342E2,
@@ -925,10 +932,15 @@ static Il2CppMethodPointer s_methodPointers[857] =
 	Animationmachine_Update_m9D3510682ED88B7F1B2C3C33B0C2FE137EBA08F0,
 	Animationmachine_ResetAnim_m26442A58EF6BF34254D65E6312E9D39778C724AC,
 	Animationmachine__ctor_m16D4E450B99C033E688F6451CE66279C143633B5,
+	CheckPoints_Start_m9B370335FA97054A371772F11B12112D0CBCE3E6,
+	CheckPoints_OnTriggerEnter_m16519ED28AC5B76A45E61A9C06B6C1985B53939F,
+	CheckPoints__ctor_m2738124551E9071D95C71E338C9A75BC118B37F6,
 	AirPlayer_FixedUpdate_m8F50F77E81BB57920DD5D69EE8626DAB45F454D8,
 	AirPlayer_Move_mEBA0A07453D7323BAC6B5590EDE91F5F6F079DEA,
 	AirPlayer_Fly_m35C6F27897B92B65CAFA9F17E4CA4510C378ACFD,
 	AirPlayer__ctor_m72C8606524E5852F96E2C878234B57E971526D7C,
+	MovePlayer_add_UpdateWalletUIPrizeJump_m2794F78878CC40EB2BBB8F403E8E9C33095711D5,
+	MovePlayer_remove_UpdateWalletUIPrizeJump_mBF7166CCE41CDABFF6659DFED75102C48C1100B9,
 	MovePlayer_Update_mB2024089C129F95C3A8C7B645E691BD181AB9893,
 	MovePlayer_FixedUpdate_mCFB64F70ABD7378D082F60DDE3FF8B35AB8F1872,
 	MovePlayer_MovePC_m3B93C868B9A9B2C817147330471C8B8EA8D21C22,
@@ -950,6 +962,8 @@ static Il2CppMethodPointer s_methodPointers[857] =
 	TypeControllerPlayer__ctor_m389FDCD7438CBA7164CBFD81C0C0702151218FB5,
 	PlaySound__PlaySound_m915CC8600D4210974AA3DBC68C9C1D99435B228C,
 	PlaySound__ctor_m0624CBAA48671A848B10D462109CF843BCA98C2B,
+	RespawnPlayer_OnTriggerEnter_mEDF48201636416D8FA53496748269BED5F8F5296,
+	RespawnPlayer__ctor_m850744CC29E7FB1AEBF322230E9A7FA14467CB6F,
 	AudioController_Start_mB15F7361E4B2B08E6279C71D1E839F3FE0E9DE39,
 	AudioController_MusicValue_m569A46A6C124925E1A949670CEEB4A4FDA39B0D1,
 	AudioController_SoundValue_m19C6ED4A499E613DA9AA0737F8D27CB77A10A79C,
@@ -1729,7 +1743,7 @@ static Il2CppMethodPointer s_methodPointers[857] =
 	U3CWarpTextU3Ed__8_System_Collections_IEnumerator_get_Current_m71D7F84D9DEF63BEC6B44866515DDCF35B142A19,
 	U3CPrivateImplementationDetailsU3E_ComputeStringHash_m6EA1F233618497AEFF8902A5EDFA24C74E2F2876,
 };
-static const int32_t s_InvokerIndices[857] = 
+static const int32_t s_InvokerIndices[864] = 
 {
 	4922,
 	4922,
@@ -1786,9 +1800,14 @@ static const int32_t s_InvokerIndices[857] =
 	4922,
 	4922,
 	4922,
+	3964,
 	4922,
 	4922,
 	4922,
+	4922,
+	4922,
+	7010,
+	7010,
 	4922,
 	4922,
 	4922,
@@ -1809,6 +1828,8 @@ static const int32_t s_InvokerIndices[857] =
 	4922,
 	4922,
 	4922,
+	4922,
+	3964,
 	4922,
 	4922,
 	4922,
@@ -2593,7 +2614,7 @@ IL2CPP_EXTERN_C const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule;
 const Il2CppCodeGenModule g_AssemblyU2DCSharp_CodeGenModule = 
 {
 	"Assembly-CSharp.dll",
-	857,
+	864,
 	s_methodPointers,
 	0,
 	NULL,

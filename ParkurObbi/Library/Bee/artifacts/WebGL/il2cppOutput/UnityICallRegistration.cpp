@@ -942,6 +942,10 @@ void RegisterAllStrippedInternalCalls()
 		void Register_UnityEngine_Collider_get_bounds_Injected();
 		Register_UnityEngine_Collider_get_bounds_Injected();
 
+		//System.Void UnityEngine.Collider::set_enabled(System.Boolean)
+		void Register_UnityEngine_Collider_set_enabled();
+		Register_UnityEngine_Collider_set_enabled();
+
 		//System.Void UnityEngine.Collider::set_isTrigger(System.Boolean)
 		void Register_UnityEngine_Collider_set_isTrigger();
 		Register_UnityEngine_Collider_set_isTrigger();
@@ -1349,6 +1353,10 @@ void RegisterAllStrippedInternalCalls()
 		//System.Int32 UnityEngine.GameObject::get_layer()
 		void Register_UnityEngine_GameObject_get_layer();
 		Register_UnityEngine_GameObject_get_layer();
+
+		//System.String UnityEngine.GameObject::get_tag()
+		void Register_UnityEngine_GameObject_get_tag();
+		Register_UnityEngine_GameObject_get_tag();
 
 		//System.Void UnityEngine.GameObject::Internal_CreateGameObject(UnityEngine.GameObject,System.String)
 		void Register_UnityEngine_GameObject_Internal_CreateGameObject();

@@ -15,6 +15,7 @@ public class WalletView : MonoBehaviour
     }
     public void OnEnable()
     {
+        MovePlayer.UpdateWalletUIPrizeJump += UpdateWalletTextUI;// Награда за прыжок
         SelAndBuy.UpdateWalletUI += UpdateWalletTextUI;
         PlusCoin.UpdateWalletUIPlusCoin += UpdateWalletTextUI;
         SaveWallet.UpdateWalletUIStartGameSave += UpdateWalletTextUI;
@@ -24,6 +25,7 @@ public class WalletView : MonoBehaviour
     // Отписываемся от событие
     public void OnDisable()
     {
+        MovePlayer.UpdateWalletUIPrizeJump -= UpdateWalletTextUI; // 
         SelAndBuy.UpdateWalletUI -= UpdateWalletTextUI;
         PlusCoin.UpdateWalletUIPlusCoin -= UpdateWalletTextUI;
         SaveWallet.UpdateWalletUIStartGameSave -= UpdateWalletTextUI;
