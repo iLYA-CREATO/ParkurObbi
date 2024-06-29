@@ -43,6 +43,7 @@ public class TimerBeforeAdsYG : MonoBehaviour
         {
             if (YandexGame.timerShowAd >= YandexGame.Instance.infoYG.fullscreenAdInterval)
             {
+                
                 onShowTimer?.Invoke();
                 objSecCounter = 0;
                 if (secondsPanelObject)
@@ -51,7 +52,7 @@ public class TimerBeforeAdsYG : MonoBehaviour
                 StartCoroutine(TimerAdShow());
                 yield return checking = false;
             }
-
+            
             if (!realtimeSeconds)
                 yield return new WaitForSeconds(1.0f);
             else

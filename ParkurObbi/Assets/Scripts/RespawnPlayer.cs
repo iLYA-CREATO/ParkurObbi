@@ -11,11 +11,15 @@ public class RespawnPlayer : MonoBehaviour
     {
         if(other.name == "TrigPlatform")
         {
-            characterControllerPlayer.enabled = false;
-            playerPosition.transform.position = checkPoints.SpawnPosition.transform.position;
-            characterControllerPlayer.enabled = true;
-
+            Respawn();
             Debug.Log("Ты упал");
         }
+    }
+
+    public void Respawn()
+    {
+        characterControllerPlayer.enabled = false;
+        playerPosition.transform.position = checkPoints.SpawnPosition.transform.position;
+        characterControllerPlayer.enabled = true;
     }
 }

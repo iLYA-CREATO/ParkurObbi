@@ -20,7 +20,7 @@ public class SaveWallet : MonoBehaviour
     }
     public void LoadSaveWallet()
     {
-        if (PlayerPrefs.HasKey("idSkin"))
+        if (PlayerPrefs.HasKey("Coin"))
         {
             wallet.Coin = PlayerPrefs.GetInt("Coin");
             UpdateWalletUIStartGameSave?.Invoke();

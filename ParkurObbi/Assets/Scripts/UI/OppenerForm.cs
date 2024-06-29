@@ -28,16 +28,23 @@ public class OppenerForm : MonoBehaviour
             Form.SetActive(true);
             IsActiv = true;
             Cursor.lockState = CursorLockMode.None;
+            Time.timeScale = 0f;
         }
     }
 
-    public void ClouseForm()
+    private void ClouseForm()
     {
         if (Input.GetKeyDown(PressKey))
         {
-            Form.SetActive(false);
-            IsActiv = false;
-            Cursor.lockState = CursorLockMode.Locked;
+            ClouseFormSetting();
         }
+    }
+
+    public void ClouseFormSetting()
+    {
+        Form.SetActive(false);
+        IsActiv = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        Time.timeScale = 1f;
     }
 }

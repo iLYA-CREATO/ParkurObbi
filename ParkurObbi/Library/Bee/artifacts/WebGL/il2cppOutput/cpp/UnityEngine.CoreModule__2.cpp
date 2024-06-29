@@ -5837,7 +5837,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* UnityEventBase_ToString_mE86F29D699
 		Type_t* L_1;
 		L_1 = Object_GetType_mE10A8FC1E57F3DF29972CCBC026C2DC3942263B3(__this, NULL);
 		String_t* L_2;
-		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(25, L_1);
+		L_2 = VirtualFuncInvoker0< String_t* >::Invoke(26, L_1);
 		String_t* L_3;
 		L_3 = String_Concat_m8855A6DE10F84DA7F4EC113CADDB59873A25573B(L_0, _stringLiteral2386E77CF610F786B06A91AF2C1B3FD2282D2745, L_2, NULL);
 		V_0 = L_3;
@@ -5899,7 +5899,7 @@ IL_0006:
 	{
 		MethodInfo_t* L_7 = V_0;
 		ParameterInfoU5BU5D_t86995AB4A1693393FE29B058CC3FD727DF0B984C* L_8;
-		L_8 = VirtualFuncInvoker0< ParameterInfoU5BU5D_t86995AB4A1693393FE29B058CC3FD727DF0B984C* >::Invoke(15, L_7);
+		L_8 = VirtualFuncInvoker0< ParameterInfoU5BU5D_t86995AB4A1693393FE29B058CC3FD727DF0B984C* >::Invoke(16, L_7);
 		V_2 = L_8;
 		V_3 = (bool)1;
 		V_4 = 0;
@@ -5923,7 +5923,7 @@ IL_0035:
 		V_8 = L_17;
 		ParameterInfo_tBC2D68304851A59EFB2EAE6B168714CD45445F2F* L_18 = V_7;
 		Type_t* L_19;
-		L_19 = VirtualFuncInvoker0< Type_t* >::Invoke(10, L_18);
+		L_19 = VirtualFuncInvoker0< Type_t* >::Invoke(11, L_18);
 		V_9 = L_19;
 		Type_t* L_20 = V_8;
 		bool L_21;
@@ -5986,7 +5986,7 @@ IL_008b:
 	{
 		Type_t* L_33 = ___0_objectType;
 		Type_t* L_34;
-		L_34 = VirtualFuncInvoker0< Type_t* >::Invoke(106, L_33);
+		L_34 = VirtualFuncInvoker0< Type_t* >::Invoke(111, L_33);
 		___0_objectType = L_34;
 	}
 
@@ -7313,7 +7313,7 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR String_t* PlayerLoopSystem_ToString_m259B8533
 	{
 		Type_t* L_0 = __this->___type;
 		String_t* L_1;
-		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(7, L_0);
+		L_1 = VirtualFuncInvoker0< String_t* >::Invoke(8, L_0);
 		return L_1;
 	}
 }
@@ -11747,7 +11747,7 @@ CATCH_000e:
 			RuntimeObject* L_3;
 			L_3 = VirtualFuncInvoker0< RuntimeObject* >::Invoke(6, L_2);
 			bool L_4;
-			L_4 = InterfaceFuncInvoker1< bool, RuntimeObject* >::Invoke(2, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220_il2cpp_TypeInfo_var)), L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral180C5DB7272B54061862DF51C798C0FE1E1AB386)));
+			L_4 = InterfaceFuncInvoker1< bool, RuntimeObject* >::Invoke(3, ((RuntimeClass*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&IDictionary_t6D03155AF1FA9083817AA5B6AD7DEEACC26AB220_il2cpp_TypeInfo_var)), L_3, ((String_t*)il2cpp_codegen_initialize_runtime_metadata_inline((uintptr_t*)&_stringLiteral180C5DB7272B54061862DF51C798C0FE1E1AB386)));
 			if (!L_4)
 			{
 				goto IL_0056;

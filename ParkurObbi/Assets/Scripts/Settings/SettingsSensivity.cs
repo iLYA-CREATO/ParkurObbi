@@ -66,4 +66,15 @@ public class SettingsSensivity : MonoBehaviour
         cameraPlayer.m_YAxis.m_MaxSpeed = x;
         cameraPlayer.m_XAxis.m_MaxSpeed = y;
     }
+
+    public void _SliderInput_X(Slider sliderX)
+    {
+        sensivitySliderX.value = sliderX.value; 
+        SaveSensivity();
+    }
+    public void _SliderInput_Y(Slider sliderY)
+    {
+        sensivitySliderY.value = sliderY.value;
+        SaveSensivity();
+    }
 }

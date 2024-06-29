@@ -5,11 +5,6 @@ public class MenuController : MonoBehaviour
     public OppenerForm MenuPanelOppenerFormShops;
     public OppenerForm MenuPanelOppenerFormSettings;
 
-
-    [Header("C#")]
-    [SerializeField] private MovePlayer _movePlayer;
-
-
     public void Update()
     {
         if(MenuPanelOppenerFormShops.IsActiv == true)
@@ -28,22 +23,6 @@ public class MenuController : MonoBehaviour
         else
         {
             MenuPanelOppenerFormShops.AllowOpen = true;
-        }
-
-        BlockPlayeMove();
-    }
-
-    // Блокируем управление игрока когда включена любая панель
-    public void BlockPlayeMove()
-    {
-        if (MenuPanelOppenerFormShops.IsActiv == true || MenuPanelOppenerFormSettings.IsActiv == true)
-        {
-            _movePlayer.enabled = false;
-        }
-        else
-        {
-            _movePlayer.enabled = true;
-
         }
     }
 }

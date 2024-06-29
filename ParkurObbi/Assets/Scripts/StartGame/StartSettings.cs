@@ -5,12 +5,15 @@ using UnityEngine.Rendering;
 using YG;
 
 public class StartSettings : MonoBehaviour
-{ 
+{
+    [SerializeField] private OneStartGame oneStartGame;
     public void Start()
     {
         Debug.Log("Сейчас язык: " + YandexGame.lang);
-        
-        BlockCursor();
+        if (oneStartGame.oneStart == 1)
+            BlockCursor();
+        else
+            AnBlockCursor();
     }
 
     // В самом старте игры будем блокировать курсор игрока

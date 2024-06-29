@@ -1,13 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class AudioController : MonoBehaviour
 {
-    [SerializeField, Header("Слайдер музыки: ")] private Slider SliderMusic;
-    [SerializeField, Header("Слайдер звуков: ")] private Slider SliderSound;
-    
+    [SerializeField, Header(": ")] Slider sliderSound;
+    [SerializeField, Header(": ")] Slider sliderMusick;
     [SerializeField, Header("Музыка: ")] private AudioSource SourceMusic;
     [SerializeField, Header("Звук: ")] private AudioSource SourceSound;
 
@@ -21,20 +22,21 @@ public class AudioController : MonoBehaviour
     {
         // Выгружаем сохранения
         OutSaveAudioSattings();
-
         // Проверяем параметры
         ChackMusicValue();
         ChackSoundValue();
     }
-    private void MusicValue()
+    private void MusicValue(Slider SliderMusic)
     {
-        SourceMusic.volume = SliderMusic.value / 100;
+        sliderMusick.value = SliderMusic.value;
+        SourceMusic.volume = sliderMusick.value / 100;
 
         ChackMusicValue();
     }
-    private void SoundValue()
+    private void SoundValue(Slider SliderSound)
     {
-        SourceSound.volume = SliderSound.value / 100;
+        sliderSound.value = SliderSound.value;
+        SourceSound.volume = sliderSound.value / 100;
 
         ChackSoundValue();
     }
@@ -64,41 +66,50 @@ public class AudioController : MonoBehaviour
         }
     }
 
-    // Сохранение настройки
-    private void SaveAudioSattings()
+    // Сохранение настройки звука
+    private void SaveSoundSattings(Slider SliderSound)
     {
         PlayerPrefs.SetFloat("SoundValueSlider", SliderSound.value);
-        PlayerPrefs.SetFloat("MusicValueSlider", SliderMusic.value );
     }
 
+    // Сохранение настройки музыки
+    private void SaveMusickSattings(Slider SliderMusic)
+    {
+        PlayerPrefs.SetFloat("MusicValueSlider", SliderMusic.value);
+    }
     // Выгрузка сохранения 
     private void OutSaveAudioSattings()
     {
         if (PlayerPrefs.HasKey("SoundValueSlider"))
         {
-            SliderSound.value = PlayerPrefs.GetFloat("SoundValueSlider");
+            sliderSound.value = PlayerPrefs.GetFloat("SoundValueSlider");
         }
         else
         {
-            SliderSound.value = 50f;
+            sliderSound.value = 50f;
         }
 
         if (PlayerPrefs.HasKey("MusicValueSlider"))
         {
-            SliderMusic.value = PlayerPrefs.GetFloat("MusicValueSlider");
+            sliderMusick.value = PlayerPrefs.GetFloat("MusicValueSlider");
         }
         else
         {
-            SliderMusic.value = 30f;
+            sliderMusick.value = 30f;
         }
-        AcceptSettings();
     }
 
-    // Применение настроек
-    public void AcceptSettings()
+    // Само взаимодействие с кнопкой
+    public void _SliderMusick(Slider sliderMusick)
     {
-        MusicValue();
-        SoundValue();
-        SaveAudioSattings();
+        Debug.Log("Музыка " + sliderMusick.value);
+        MusicValue(sliderMusick);
+        SaveMusickSattings(sliderMusick);
+    }
+    public void _SliderSound(Slider sliderSound)
+    {
+        Debug.Log("Звук " + sliderSound.value);
+        SoundValue(sliderSound);
+        SaveSoundSattings(sliderSound);
     }
 }

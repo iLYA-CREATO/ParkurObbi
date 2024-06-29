@@ -39,6 +39,12 @@ extern "C" void RegisterStaticallyLinkedModulesGranular()
 	void RegisterModule_TLS();
 	RegisterModule_TLS();
 
+	void RegisterModule_Terrain();
+	RegisterModule_Terrain();
+
+	void RegisterModule_TerrainPhysics();
+	RegisterModule_TerrainPhysics();
+
 	void RegisterModule_TextRendering();
 	RegisterModule_TextRendering();
 
@@ -147,6 +153,7 @@ class BoxCollider; template <> void RegisterUnityClass<BoxCollider>(const char*)
 class CapsuleCollider; template <> void RegisterUnityClass<CapsuleCollider>(const char*);
 class CharacterController; template <> void RegisterUnityClass<CharacterController>(const char*);
 class Collider; template <> void RegisterUnityClass<Collider>(const char*);
+class MeshCollider; template <> void RegisterUnityClass<MeshCollider>(const char*);
 class PhysicsManager; template <> void RegisterUnityClass<PhysicsManager>(const char*);
 class Rigidbody; template <> void RegisterUnityClass<Rigidbody>(const char*);
 class SphereCollider; template <> void RegisterUnityClass<SphereCollider>(const char*);
@@ -155,6 +162,10 @@ class CompositeCollider2D; template <> void RegisterUnityClass<CompositeCollider
 class Physics2DSettings; template <> void RegisterUnityClass<Physics2DSettings>(const char*);
 class PolygonCollider2D; template <> void RegisterUnityClass<PolygonCollider2D>(const char*);
 class Rigidbody2D; template <> void RegisterUnityClass<Rigidbody2D>(const char*);
+class Terrain; template <> void RegisterUnityClass<Terrain>(const char*);
+class TerrainData; template <> void RegisterUnityClass<TerrainData>(const char*);
+class TerrainLayer; template <> void RegisterUnityClass<TerrainLayer>(const char*);
+class TerrainCollider; template <> void RegisterUnityClass<TerrainCollider>(const char*);
 namespace TextRendering { class Font; } template <> void RegisterUnityClass<TextRendering::Font>(const char*);
 namespace TextRenderingPrivate { class TextMesh; } template <> void RegisterUnityClass<TextRenderingPrivate::TextMesh>(const char*);
 namespace UI { class Canvas; } template <> void RegisterUnityClass<UI::Canvas>(const char*);
@@ -165,7 +176,7 @@ void RegisterAllClasses()
 {
 void RegisterBuiltinTypes();
 RegisterBuiltinTypes();
-	//Total: 87 non stripped classes
+	//Total: 92 non stripped classes
 	//0. Animation
 	RegisterUnityClass<Animation>("Animation");
 	//1. AnimationClip
@@ -314,31 +325,41 @@ RegisterBuiltinTypes();
 	RegisterUnityClass<CharacterController>("Physics");
 	//73. Collider
 	RegisterUnityClass<Collider>("Physics");
-	//74. PhysicsManager
+	//74. MeshCollider
+	RegisterUnityClass<MeshCollider>("Physics");
+	//75. PhysicsManager
 	RegisterUnityClass<PhysicsManager>("Physics");
-	//75. Rigidbody
+	//76. Rigidbody
 	RegisterUnityClass<Rigidbody>("Physics");
-	//76. SphereCollider
+	//77. SphereCollider
 	RegisterUnityClass<SphereCollider>("Physics");
-	//77. Collider2D
+	//78. Collider2D
 	RegisterUnityClass<Collider2D>("Physics2D");
-	//78. CompositeCollider2D
+	//79. CompositeCollider2D
 	RegisterUnityClass<CompositeCollider2D>("Physics2D");
-	//79. Physics2DSettings
+	//80. Physics2DSettings
 	RegisterUnityClass<Physics2DSettings>("Physics2D");
-	//80. PolygonCollider2D
+	//81. PolygonCollider2D
 	RegisterUnityClass<PolygonCollider2D>("Physics2D");
-	//81. Rigidbody2D
+	//82. Rigidbody2D
 	RegisterUnityClass<Rigidbody2D>("Physics2D");
-	//82. Font
+	//83. Terrain
+	RegisterUnityClass<Terrain>("Terrain");
+	//84. TerrainData
+	RegisterUnityClass<TerrainData>("Terrain");
+	//85. TerrainLayer
+	RegisterUnityClass<TerrainLayer>("Terrain");
+	//86. TerrainCollider
+	RegisterUnityClass<TerrainCollider>("TerrainPhysics");
+	//87. Font
 	RegisterUnityClass<TextRendering::Font>("TextRendering");
-	//83. TextMesh
+	//88. TextMesh
 	RegisterUnityClass<TextRenderingPrivate::TextMesh>("TextRendering");
-	//84. Canvas
+	//89. Canvas
 	RegisterUnityClass<UI::Canvas>("UI");
-	//85. CanvasGroup
+	//90. CanvasGroup
 	RegisterUnityClass<UI::CanvasGroup>("UI");
-	//86. CanvasRenderer
+	//91. CanvasRenderer
 	RegisterUnityClass<UI::CanvasRenderer>("UI");
 
 }

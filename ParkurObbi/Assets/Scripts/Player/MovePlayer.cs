@@ -1,12 +1,12 @@
 
 using System;
+using System.Drawing;
 using UnityEngine;
 
 public class MovePlayer : MonoBehaviour
 {
     // Actions
     public static event Action UpdateWalletUIPrizeJump; // Тут мы сообщаем кошельку что в него выгружаем сохранённые деньги
-
     [Header("Player")]
     public  CharacterController controller;
 
@@ -27,25 +27,23 @@ public class MovePlayer : MonoBehaviour
 
     [Header("Jump")]
     public bool isJump;
-
-    public bool _iSGround;
-    [Header("Награда за прыжок")]
-    public int prize; 
     public int ValueJump;
+    public int prize;
 
-    [SerializeField][Header("Настройка гравитации")] private float gravity;
-    [SerializeField][Header("Настройка гравитации прыжка")] private float gravityJump;
+    [SerializeField][Header("Настройка гравитации")] private float gravity = -20;
     [SerializeField][Header("Настройка силы прыжка")] private float jumpSpeed = 15;
      private Vector3 directionJump;
 
     [Header("C#")]
     [SerializeField] private TypeControllerPlayer typeControllerPlayer;
     [SerializeField] private Wallet wallet;
+    [SerializeField] private PlaySound playSound;
+
+    [Header("Audio")]
+    [SerializeField] private AudioClip clipJump;
 
     public void Update()
     {
-        _iSGround = controller.isGrounded;
-
         if (direction.magnitude > 0)
         {
             isRun = true;
@@ -57,6 +55,7 @@ public class MovePlayer : MonoBehaviour
     }
     public void FixedUpdate()
     {
+        IsGround();
         if (typeControllerPlayer.WolkPlayer == true)
         {   
             MovePC();
@@ -65,7 +64,7 @@ public class MovePlayer : MonoBehaviour
         if (typeControllerPlayer.jumpPlayer == true)
         {
             _JumpPC();
-            if (controller.isGrounded == false)
+            if(controller.isGrounded == false)
             {
                 // Запуск анимации прыжка
                 animationmachine.ResetAnim();
@@ -76,6 +75,7 @@ public class MovePlayer : MonoBehaviour
         }
     }
 
+    private bool IsGround() => controller.isGrounded;
     public void MovePC()
     {
         float hor = Input.GetAxis("Horizontal");
@@ -101,10 +101,11 @@ public class MovePlayer : MonoBehaviour
 
     private void _JumpPC()
     {
-        if (controller.isGrounded == true)
+        if (IsGround() == true)
         {
             if (Input.GetButton("Jump"))
             {
+                playSound._PlaySound(clipJump);
                 directionJump.y = jumpSpeed;
                 wallet.Coin += prize; // даём награду игроку за прыжок
                 ValueJump++; // Считаем сколько игрок сделал прыжков
@@ -112,11 +113,10 @@ public class MovePlayer : MonoBehaviour
                 Debug.Log("Space");
             }
         }
-        directionJump.y += gravityJump * Time.deltaTime;
+        directionJump.y += gravity * Time.deltaTime;
         controller.Move(directionJump * Time.deltaTime);
 
-
-        if (controller.isGrounded == false)
+        if (IsGround() == false)
         {
             isJump = true;
         }
