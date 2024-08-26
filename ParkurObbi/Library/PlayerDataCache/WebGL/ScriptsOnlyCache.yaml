@@ -7,7 +7,9 @@ ScriptsOnlyBuild:
     - CheckPoints
     - FullAd
     - Item
+    - LowPolyWater.LowPolyWater
     - MenuController
+    - MovePlatform
     - MovePlayer
     - OF
     - OneStartGame
@@ -25,6 +27,8 @@ ScriptsOnlyBuild:
     - SkinsVisableInventory
     - StartSettings
     - TestClearSave
+    - TimeDate
+    - TimeLider
     - TimerBeforeAdsYG
     - TypeControllerPlayer
     - Wallet
@@ -42,6 +46,12 @@ ScriptsOnlyBuild:
     - Cinemachine.CinemachinePipeline
     - Cinemachine.CinemachineVirtualCamera
     - Cinemachine.PostFX.CinemachinePostProcessing
+    Unity.Recorder.Editor.dll:
+    - UnityEditor.Recorder.MovieRecorderEditor
+    - UnityEditor.Recorder.MovieRecorderSettings
+    - UnityEditor.Recorder.RecorderControllerSettings
+    - UnityEditor.Recorder.RecorderSettingsPrefsEditor
+    - UnityEditor.Recorder.RecorderWindow
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro:
@@ -59,10 +69,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -141,6 +149,15 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.SpriteState
   methodsToPreserve:
   - assembly: Assembly-CSharp
+    fullTypeName: OpenSkinVizable
+    methodName: ClickME
+  - assembly: Assembly-CSharp
+    fullTypeName: OpenSkinVizable
+    methodName: ClickME
+  - assembly: Assembly-CSharp
+    fullTypeName: OpenSkinVizable
+    methodName: ClickME
+  - assembly: Assembly-CSharp
     fullTypeName: FullAd
     methodName: StopGame
   - assembly: Assembly-CSharp
@@ -153,17 +170,8 @@ ScriptsOnlyBuild:
     fullTypeName: OpenSkinVizable
     methodName: ClickME
   - assembly: Assembly-CSharp
-    fullTypeName: OpenSkinVizable
-    methodName: ClickME
-  - assembly: Assembly-CSharp
-    fullTypeName: OpenSkinVizable
-    methodName: ClickME
-  - assembly: Assembly-CSharp
-    fullTypeName: OpenSkinVizable
-    methodName: ClickME
-  - assembly: Assembly-CSharp
-    fullTypeName: OpenSkinVizable
-    methodName: ClickME
+    fullTypeName: FullAd
+    methodName: StartGameAd
   - assembly: Assembly-CSharp
     fullTypeName: SelAndBuy
     methodName: _SelectSkin
@@ -228,9 +236,6 @@ ScriptsOnlyBuild:
     fullTypeName: OF
     methodName: _ClouseF
   - assembly: Assembly-CSharp
-    fullTypeName: FullAd
-    methodName: StartGameAd
-  - assembly: Assembly-CSharp
     fullTypeName: SelAndBuy
     methodName: _BuySkin
   sceneClasses:
@@ -280,115 +285,123 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 16638}
+      Script: {instanceID: 16656}
     - Class: 114
-      Script: {instanceID: 16640}
+      Script: {instanceID: 16660}
     - Class: 114
-      Script: {instanceID: 16690}
+      Script: {instanceID: 16714}
     - Class: 114
-      Script: {instanceID: 16782}
+      Script: {instanceID: 16810}
     - Class: 114
-      Script: {instanceID: 16878}
+      Script: {instanceID: 16910}
     - Class: 114
-      Script: {instanceID: 16906}
+      Script: {instanceID: 16938}
     - Class: 114
-      Script: {instanceID: 16914}
+      Script: {instanceID: 16946}
     - Class: 114
-      Script: {instanceID: 16934}
+      Script: {instanceID: 16966}
     - Class: 114
-      Script: {instanceID: 17038}
+      Script: {instanceID: 17070}
     - Class: 114
-      Script: {instanceID: 17182}
+      Script: {instanceID: 17218}
     - Class: 114
-      Script: {instanceID: 17338}
+      Script: {instanceID: 17378}
     - Class: 114
-      Script: {instanceID: 17708}
+      Script: {instanceID: 17538}
     - Class: 114
-      Script: {instanceID: 17778}
+      Script: {instanceID: 17764}
     - Class: 114
-      Script: {instanceID: 17846}
+      Script: {instanceID: 17836}
     - Class: 114
       Script: {instanceID: 17906}
     - Class: 114
-      Script: {instanceID: 17948}
+      Script: {instanceID: 17968}
     - Class: 114
-      Script: {instanceID: 17998}
+      Script: {instanceID: 18010}
     - Class: 114
-      Script: {instanceID: 18828}
+      Script: {instanceID: 18060}
     - Class: 114
-      Script: {instanceID: 18962}
+      Script: {instanceID: 18578}
     - Class: 114
-      Script: {instanceID: 19204}
+      Script: {instanceID: 18922}
     - Class: 114
-      Script: {instanceID: 19276}
+      Script: {instanceID: 19028}
     - Class: 114
-      Script: {instanceID: 19390}
+      Script: {instanceID: 19060}
     - Class: 114
-      Script: {instanceID: 19402}
+      Script: {instanceID: 19314}
     - Class: 114
-      Script: {instanceID: 19440}
+      Script: {instanceID: 19392}
     - Class: 114
-      Script: {instanceID: 19484}
+      Script: {instanceID: 19508}
     - Class: 114
-      Script: {instanceID: 19592}
+      Script: {instanceID: 19520}
     - Class: 114
-      Script: {instanceID: 19666}
+      Script: {instanceID: 19564}
     - Class: 114
-      Script: {instanceID: 20062}
+      Script: {instanceID: 19610}
     - Class: 114
-      Script: {instanceID: 20090}
+      Script: {instanceID: 19724}
     - Class: 114
-      Script: {instanceID: 20124}
+      Script: {instanceID: 19802}
     - Class: 114
-      Script: {instanceID: 20364}
+      Script: {instanceID: 20042}
     - Class: 114
-      Script: {instanceID: 20442}
+      Script: {instanceID: 20216}
     - Class: 114
-      Script: {instanceID: 20496}
+      Script: {instanceID: 20246}
     - Class: 114
-      Script: {instanceID: 20816}
+      Script: {instanceID: 20282}
     - Class: 114
-      Script: {instanceID: 20872}
+      Script: {instanceID: 20530}
     - Class: 114
-      Script: {instanceID: 20878}
+      Script: {instanceID: 20612}
     - Class: 114
-      Script: {instanceID: 20896}
+      Script: {instanceID: 20668}
     - Class: 114
-      Script: {instanceID: 20998}
+      Script: {instanceID: 21002}
     - Class: 114
-      Script: {instanceID: 21008}
+      Script: {instanceID: 21062}
     - Class: 114
-      Script: {instanceID: 21022}
+      Script: {instanceID: 21068}
     - Class: 114
-      Script: {instanceID: 21206}
+      Script: {instanceID: 21086}
     - Class: 114
-      Script: {instanceID: 21220}
+      Script: {instanceID: 21190}
     - Class: 114
-      Script: {instanceID: 21554}
+      Script: {instanceID: 21202}
     - Class: 114
-      Script: {instanceID: 21796}
+      Script: {instanceID: 21216}
     - Class: 114
-      Script: {instanceID: 21862}
+      Script: {instanceID: 21408}
     - Class: 114
-      Script: {instanceID: 21916}
+      Script: {instanceID: 21422}
     - Class: 114
-      Script: {instanceID: 22256}
+      Script: {instanceID: 21766}
     - Class: 114
-      Script: {instanceID: 22440}
+      Script: {instanceID: 21780}
     - Class: 114
-      Script: {instanceID: 22660}
+      Script: {instanceID: 22034}
     - Class: 114
-      Script: {instanceID: 22854}
+      Script: {instanceID: 22104}
     - Class: 114
-      Script: {instanceID: 23192}
+      Script: {instanceID: 22164}
     - Class: 114
-      Script: {instanceID: 23228}
+      Script: {instanceID: 22518}
     - Class: 114
-      Script: {instanceID: 23298}
+      Script: {instanceID: 22718}
     - Class: 114
-      Script: {instanceID: 23402}
+      Script: {instanceID: 22946}
     - Class: 114
-      Script: {instanceID: 31944}
+      Script: {instanceID: 23160}
+    - Class: 114
+      Script: {instanceID: 23512}
+    - Class: 114
+      Script: {instanceID: 23550}
+    - Class: 114
+      Script: {instanceID: 23634}
+    - Class: 114
+      Script: {instanceID: 23740}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -422,16 +435,16 @@ ScriptsOnlyBuild:
   scriptHashData:
   - hash:
       serializedVersion: 2
-      Hash: d41ab9b5ea92474f9c0a6937a0607ce1
-    assemblyName: UnityEngine.UI
-    namespaceName: UnityEngine.UI
-    className: ContentSizeFitter
-  - hash:
-      serializedVersion: 2
       Hash: 915204dac8acad99f076d6e72ada0a0f
     assemblyName: UnityEngine.UI
     namespaceName: UnityEngine.UI
     className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: d41ab9b5ea92474f9c0a6937a0607ce1
+    assemblyName: UnityEngine.UI
+    namespaceName: UnityEngine.UI
+    className: ContentSizeFitter
   - hash:
       serializedVersion: 2
       Hash: 540882762544409cc4530e60db00e951
@@ -638,6 +651,12 @@ ScriptsOnlyBuild:
     className: UnityOnJointBreakMessageListener
   - hash:
       serializedVersion: 2
+      Hash: ef700e85ed9a6e648eab4d8ea9732f3a
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: MovePlatform
+  - hash:
+      serializedVersion: 2
       Hash: 41cf4f0e516f26acc8feddb86ba36034
     assemblyName: Assembly-CSharp
     namespaceName: YG.Example
@@ -818,6 +837,12 @@ ScriptsOnlyBuild:
     className: Cinemachine3rdPersonFollow
   - hash:
       serializedVersion: 2
+      Hash: 4001f3727b45ffa51ecc45ba969b4108
+    assemblyName: Unity.Recorder
+    namespaceName: UnityEngine.Recorder
+    className: RecorderBindings
+  - hash:
+      serializedVersion: 2
       Hash: b98001682cba83786775c9e415b89a61
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
@@ -882,6 +907,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTransformParentChangedMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 7351dccfb4c2048f67fbc88987bcb9e6
+    assemblyName: Assembly-CSharp
+    namespaceName: LowPolyWater
+    className: LowPolyWater
   - hash:
       serializedVersion: 2
       Hash: 31666030fd51e4173e4cae669f8984e5
@@ -980,10 +1011,16 @@ ScriptsOnlyBuild:
     className: UnityOnCollisionExit2DMessageListener
   - hash:
       serializedVersion: 2
-      Hash: 14d4c9e2324defd33535564f00e388e5
+      Hash: a7df147aac76b680713a18219c7b919a
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: MovePlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 07f143fb5d5e97e0184e05b546c3787b
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TimeLider
   - hash:
       serializedVersion: 2
       Hash: 0a3f328f3ea906bbbcf794f4c27ee59d
@@ -1058,7 +1095,7 @@ ScriptsOnlyBuild:
     className: CinemachineGroupComposer
   - hash:
       serializedVersion: 2
-      Hash: 8de5331bd322e8016f8d766ba738fca4
+      Hash: 25e7dc492511cca7542b4214ce31711f
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: CheckPoints
@@ -1190,7 +1227,7 @@ ScriptsOnlyBuild:
     className: TMP_SubMeshUI
   - hash:
       serializedVersion: 2
-      Hash: e64a8a39cf59f4f4db60add74adfba49
+      Hash: 100d396ba8e20d97e7d60a90748606da
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: FullAd
@@ -1254,6 +1291,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnPointerClickMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: 977a6e10f6e2c8440e875593fb5d00e5
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: TimeDate
   - hash:
       serializedVersion: 2
       Hash: 2d8281de730713541d467bdb51a59825
@@ -1620,6 +1663,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnTriggerStay2DMessageListener
+  - hash:
+      serializedVersion: 2
+      Hash: f6eab99cb9cdb5f358b243e89d60f685
+    assemblyName: Assembly-CSharp
+    namespaceName: 
+    className: OneStartGame
   - hash:
       serializedVersion: 2
       Hash: 9104447b683bf70406fa01f12ecb564a
@@ -2090,7 +2139,7 @@ ScriptsOnlyBuild:
     className: TouchInputModule
   - hash:
       serializedVersion: 2
-      Hash: ceabbc73d0f7ca23168162f8a0011439
+      Hash: 9676f5c64afd7bb8dcee5f8afa8ec769
     assemblyName: Assembly-CSharp
     namespaceName: 
     className: OppenerForm
@@ -2112,13 +2161,7 @@ ScriptsOnlyBuild:
     assemblyName: Unity.VisualScripting.Core
     namespaceName: Unity.VisualScripting
     className: UnityOnSliderValueChangedMessageListener
-  - hash:
-      serializedVersion: 2
-      Hash: f6eab99cb9cdb5f358b243e89d60f685
-    assemblyName: Assembly-CSharp
-    namespaceName: 
-    className: OneStartGame
   platform: 20
   scenePathNames:
   - Assets/Scenes/Test.unity
-  playerPath: E:/fails/iT/Project/ParkurRoblox
+  playerPath: E:/fails/iT/Project/ParkurRoblox/Build.2.1

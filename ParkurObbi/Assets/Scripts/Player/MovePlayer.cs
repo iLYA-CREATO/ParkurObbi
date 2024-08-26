@@ -38,6 +38,8 @@ public class MovePlayer : MonoBehaviour
     [SerializeField] private TypeControllerPlayer typeControllerPlayer;
     [SerializeField] private Wallet wallet;
     [SerializeField] private PlaySound playSound;
+    [SerializeField] private FullAd fullAd;
+
 
     [Header("Audio")]
     [SerializeField] private AudioClip clipJump;
@@ -55,24 +57,27 @@ public class MovePlayer : MonoBehaviour
     }
     public void FixedUpdate()
     {
-        IsGround();
-        if (typeControllerPlayer.WolkPlayer == true)
-        {   
-            MovePC();
-        }
-
-        if (typeControllerPlayer.jumpPlayer == true)
+        if (fullAd.IsRecklam == false && fullAd.panelPause.activeSelf == false)
         {
-            _JumpPC();
-            if(controller.isGrounded == false)
+            IsGround();
+            if (typeControllerPlayer.WolkPlayer == true)
             {
-                // Запуск анимации прыжка
-                animationmachine.ResetAnim();
-                animationmachine.animState = AnimState.jump;
-                animationmachine.ResetAnim();
+                MovePC();
             }
 
+            if (typeControllerPlayer.jumpPlayer == true)
+            {
+                _JumpPC();
+                if (controller.isGrounded == false)
+                {
+                    // Запуск анимации прыжка
+                    animationmachine.ResetAnim();
+                    animationmachine.animState = AnimState.jump;
+                    animationmachine.ResetAnim();
+                }
+            }
         }
+            
     }
 
     private bool IsGround() => controller.isGrounded;

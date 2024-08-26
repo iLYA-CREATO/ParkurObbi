@@ -26,9 +26,9 @@ MonoBehaviour:
   showFirstAd: 1
   rewardedAfterClosing: 1
   adDisplayCalls: 0
-  fullscreenAdInterval: 60
+  fullscreenAdInterval: 65
   durationOfAdSimulation: 1
-  loadAdWithDelaySimulation: 3
+  loadAdWithDelaySimulation: 2
   testErrorOfRewardedAdsInEditor: 0
   saveCloud: 0
   flush: 0

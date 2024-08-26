@@ -11,19 +11,24 @@ public class OppenerForm : MonoBehaviour
     public bool IsActiv = false;
     public bool AllowOpen = true;
 
+    [Header("C#")]
+    [SerializeField] private FullAd fullAd;
     public void Update()
     {
-        if (AllowOpen == true)
+        if (fullAd.IsRecklam == false)
         {
-            if (IsActiv == false)
-                OpenForm();
-            else
-                ClouseForm();
+            if (AllowOpen == true)
+            {
+                if (IsActiv == false)
+                    OpenForm();
+                else
+                    ClouseForm();
+            }
         }
     }
     public void OpenForm()
     {
-        if(Input.GetKeyDown(PressKey))
+        if (Input.GetKeyDown(PressKey))
         {
             Form.SetActive(true);
             IsActiv = true;

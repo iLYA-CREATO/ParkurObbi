@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a80ebbc2773bee49a234edd90207b30, type: 3}
   m_Name: HendBazuki
   m_EditorClassIdentifier: 
-  ID: 3
+  ID: 2
   Name: "\u0420\u0443\u043A\u0438 \u0431\u0430\u0437\u0443\u043A\u0438"
-  icon: {fileID: 21300000, guid: ccdc3f2717e674f469d9c1280cd99aa7, type: 3}
+  icon: {fileID: 21300000, guid: 955a408d69771bd47a8f6849dc830beb, type: 3}
   Cost: 290
-  Purchased: 0
+  Purchased: 1
   Selected: 0

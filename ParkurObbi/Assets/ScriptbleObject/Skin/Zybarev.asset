@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a80ebbc2773bee49a234edd90207b30, type: 3}
   m_Name: Zybarev
   m_EditorClassIdentifier: 
-  ID: 2
+  ID: 1
   Name: "\u0417\u0443\u0431\u0430\u0440\u0435\u0432"
-  icon: {fileID: 21300000, guid: e6a75eb4d238e6848900644d9abba69b, type: 3}
+  icon: {fileID: 21300000, guid: 10b92f4e687faee4794ecc2eb2915525, type: 3}
   Cost: 1000
-  Purchased: 0
+  Purchased: 1
   Selected: 0

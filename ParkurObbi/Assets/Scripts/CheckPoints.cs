@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class CheckPoints : MonoBehaviour
 {
-    public Transform StartPosition;
+    [SerializeField] private Transform StartPosition;
     public Transform SpawnPosition;
     public List<Transform> allSpawn;
-    public int idSpwn;
+
+    [SerializeField] private int idSpwn;
+    [SerializeField] private int fianalId;
     public RespawnPlayer RespawnPlayer;
 
-    public GameObject PanelWin;
+    [SerializeField] private GameObject PanelWin;
 
-    public AudioClip checkPointSound;
+    [SerializeField] private AudioClip checkPointSound;
 
-    public PlaySound playSound;
+    [SerializeField] private PlaySound playSound;
+
+
     private void Start()
     {
         if (PlayerPrefs.HasKey("SpawnPosition"))
@@ -44,7 +48,7 @@ public class CheckPoints : MonoBehaviour
                     playSound._PlaySound(checkPointSound);
                 }
 
-                if(idSpwn == 11)
+                if(idSpwn == fianalId)
                 {
                     idSpwn = 0;
                     PanelWin.SetActive(true);
